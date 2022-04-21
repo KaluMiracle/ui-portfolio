@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Libre Light';
 }
 
 a {
@@ -13,4 +12,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Libre Light';
+    src: local('Lato'),
+      url('../assets/fonts/Libre_Franklin/static/LibreFranklin-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hagrid Light';
+    src: local('Lato'),
+      url('../assets/fonts/hagrid-light.ttf') format('truetype');
 }

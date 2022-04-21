@@ -1,0 +1,304 @@
+.index{
+    margin: 0;
+    padding: 0;
+}
+.container_1{
+    width: 100%;
+    height: 80vh;
+    min-height: 700px;
+    padding: 50px 5%;
+    background-color: white;
+    box-sizing: border-box;
+    .head{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 13px;
+            color: #1a2238;
+            margin: 0;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        div{
+            width:60%;
+            height: 1px;
+            margin-bottom: 5px;
+            background: black;
+        }
+    }
+
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        P{
+            margin: 0 20px;
+            font-weight: bolder;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        p:hover{
+            color: #056a4c;
+            text-decoration: underline;
+        }
+    }
+
+    h1{
+        margin: 0;
+        margin-top: 20%;
+        font-size: 25px;
+        font-family: 'Hagrid Light';
+        font-weight: normal;
+        
+        span{
+            color: #ff6a3d
+        }
+    }
+    h2{
+        font-size: 15px;
+        font-family: 'Hagrid Light';
+        font-weight: normal;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .case_studies{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        img{
+            width: 100px;
+        }
+        p{
+            margin: 0;
+            margin-left: 20px;
+            font-weight: bolder;
+            font-size: 19.4px;
+            text-transform: uppercase;
+            color: #056a4c;
+        }
+    }
+
+    @media screen and (min-width: 740px) {
+        height: 60vh;
+        min-height: 700px;
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 20px;
+        }
+
+        .head{
+            h2{
+                font-size: 26.4px;
+            }
+            div{
+                width: 60%;
+            }
+        }
+        .nav{
+            justify-content: flex-end;
+        }
+        .case_studies{
+            justify-content: flex-end;
+        }
+        
+    }
+    @media screen and (min-width: 1024px) {
+        height: 110vh;
+        padding: 50px 10%;
+        h1{
+            font-size: 75px;
+            margin-top: 15%;
+
+        }
+        h2{
+            font-size: 30px;
+        }
+        .head{
+            h2{
+                font-size: 26.4px;
+            }
+            div{
+                width: 80%;
+            }
+        }
+        .case_studies{
+            margin-top: 10%;
+        }
+        
+    }
+    
+}
+
+.container_2{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    padding: 0 10%;
+    padding-top: 100px;
+    background: #1a2238;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    .about{
+        width: 100%;
+        h2{
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        P{
+            margin: 0;
+            margin-bottom: 20px;
+            font-weight: bolder;
+            font-size: 16px;
+            color: white;
+        }
+
+    }
+    .image{
+        width: 500px;
+        height: 200px;
+        background-color: #ff6a3d;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 100vh;
+        align-items: flex-start;
+        .about{
+            width: 50%;
+            h2{
+                font-size: 35px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
+}
+
+
+.container_3{
+    width: 100%;
+    height: 80vh;
+    min-height: 700px;
+    padding: 50px 5%;
+    background-color: white;
+    .head{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-size: 13px;
+            color: #1a2238;
+            margin: 0;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        div{
+            width:60%;
+            height: 1px;
+            margin-bottom: 5px;
+            background: black;
+        }
+    }
+
+    .box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 5%;
+        flex-wrap: wrap;
+
+        h4{
+            width: 50%;
+            min-width: 300px; 
+            color: #056a4c;
+            margin: 0;
+            margin-top: 20px;
+            text-align: center;
+            flex-grow: 1;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        div{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            p{
+                font-size: 18px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 740px) {
+        height: 60vh;
+        min-height: 700px;
+        
+
+        .head{
+            h2{
+                font-size: 42px;
+            }
+            div{
+                width: 60%;
+            }
+        }
+        
+        
+    }
+    @media screen and (min-width: 1024px) {
+        height: 90vh;
+        padding: 50px 10%;
+       
+        .head{
+            h2{
+                font-size: 42px;
+            }
+            div{
+                width: 80%;
+            }
+        }
+        
+        .box{
+            h4{
+                font-size: 40px;
+                width: 40%;
+                margin-right: 150px;
+            }
+            div{
+                width: 30%;
+                p{
+                    font-size: 25px;
+                }
+            }
+            
+        }
+        
+    }
+}
