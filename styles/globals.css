@@ -24,3 +24,22 @@ a {
     src: local('Lato'),
       url('../assets/fonts/hagrid-light.ttf') format('truetype');
 }
+
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: local('Lato'),
+      url('../assets/fonts/NeueMachina-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sauce';
+    src: local('Lato'),
+      url('../assets/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gatwick Bold';
+    src: local('Lato'),
+      url('../assets/fonts/Gatwick-Bold.otf') format('truetype');
+}

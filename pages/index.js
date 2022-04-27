@@ -20,10 +20,10 @@ export default function Home() {
           <div></div>
         </div>
         <div className={styles.nav}>
-          <Link href={''}>
+          <Link href={'/#about'}>
             <p>about</p>
           </Link>
-          <Link href={''}>
+          <Link href={'/works'}>
             <p>Works</p>
           </Link>
           <Link href={''}>
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className={styles.container_2}>
+      <div id='about' className={styles.container_2}>
         <div className={styles.about}>
           <h2>About Me</h2>
           <p>Hi! I'm Heritage.</p>
@@ -78,6 +78,7 @@ export default function Home() {
           </div>
         </div>
 
+       
       </div>
       
       

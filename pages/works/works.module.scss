@@ -1,0 +1,144 @@
+
+.index{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}
+
+.fancy_header{
+    width: 95%;
+    font-family: 'Libre Light';
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: normal;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    .line{
+        width: 100%;
+        height: 1px;
+        margin-top: 10px;
+        background: black;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 70%;
+
+        flex-direction: row;
+        
+        .line{
+            margin-left: 50px;
+        }
+        
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 35px;
+        width: 80%;
+        align-self: flex-start;
+        margin-left: 10%;
+        max-width: 800px;
+        
+        
+        
+    }
+
+}
+
+.video_container{
+    
+    width: 95%;
+    height: 40vh;
+    min-height: 400px;
+    align-self: center;
+    margin-bottom: 50px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 80%;
+        min-height: 500px;
+        margin-bottom: 100px;
+        
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 60%;
+        height: 90vh;
+        min-height: 700px;
+        
+        
+        
+    }
+}
+
+.large{
+
+    @media screen and (min-width: 768px) {
+        width: 90%;
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 80%;
+        
+    }
+
+}
+
+.work_container{
+    width: 95%;
+    min-height: 500px;
+    height: 70vh;
+    margin: 50px 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+    h3{
+        font-family: 'Libre Light';
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .image_container{
+        margin-top: 50px;
+        width: 100%;
+        height: 80%;
+        align-self: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-height: 600px;
+        .image_container{
+            width: 85%;
+            
+        }
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 70%;
+        height: 150vh;
+        min-height: 1000px;
+        
+        .image_container{
+            width: 100%;
+            
+        }
+        
+    }
+}
