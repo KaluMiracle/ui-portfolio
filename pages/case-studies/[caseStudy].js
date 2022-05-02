@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import React from 'react'
 import { caseStudies } from "./casestudies"
 import styles from './slug.module.scss'
 import Link from 'next/link'
@@ -41,6 +42,7 @@ const FancyHeaderYellow = ({title=''})=>{
     )
 }
 
+
 const Result = ({
     index =1,
     content=''
@@ -59,28 +61,42 @@ const Result = ({
     )
 }
 
+const FancyHeader= ({
+    title=''
+})=>{
+    return(
+        <div className={styles.fancy_header}>
+            <div className={styles.grey}>
+                <h1>{title}</h1>
+            </div>
+            <h3>{title}</h3>
+
+        </div>
+    )
+}
+
 const colors = [
     {
-        background: 'red',
+        background: '#e84839',
         color: 'white',
     },
     {
-        background: 'yellow',
+        background: '#fcc018',
         color: 'black',
     },
     {
-        background: 'aquamarine',
+        background: '#00c2cb',
         color: 'black',
     },
     {
-        background: 'blue',
+        background: '#428ecc',
         color: 'white',
     },
     
 ]
 const CaseStudy = ({caseStudy}) =>{
     return (
-         <div className={styles.index}>
+        <div className={styles.index}>
             <Link href={'/case-studies'}>
                 <div className={styles.nav}>
                     close
@@ -132,8 +148,87 @@ const CaseStudy = ({caseStudy}) =>{
                     })}
                 </div>
             </div>
+
+            <div className={styles.brain_storming}>
+                <FancyHeader title="Brain storming"/>
+                    {
+                        caseStudy.brainstorming.map((item, index)=> {
+                            return (
+                            <div className={styles.description} key={index}>
+                                <p><span>{index + 1}. {item.title}: </span>{item.description}</p>
+
+                                {item.content ?
+                                    <div className={styles.contents_container} >
+                                        {item.content.map((content, index)=>{
+                                            return (
+                                                <div key={index} className={styles.content}>
+                                                    <article>
+                                                        <h5>The Challenge</h5>
+                                                        <div className={styles.box} style={{
+                                                            background: colors[index]? colors[index].background : colors[0].background ,
+
+                                                        }}>
+                                                            {content.challenge}
+                                                        </div>
+                                                    </article>
+                                                    ->
+                                                    <article>
+                                                        <h5>The solution</h5>
+                                                        <div className={styles.box} style={{
+                                                            background: colors[index]? colors[index].background : colors[0].background ,
+
+                                                        }}> 
+                                                            {content.solution}
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            )
+                                            
+                                        })}
+                                    </div>  : null
+                                }
+
+                            </div>)
+                        })
+                    }
+
+                
+                
+            </div>
             
 
+            {
+                caseStudy.others.map((item, index) => {
+                    return (
+                        <div className={styles.container_large} key={index}>
+                            <FancyHeader title={item.title}/>
+                            <div className={styles.content}>
+                                <p>{item.description}</p>
+                            </div>
+                            {
+                                item.urls.map((url, index) => {
+                                    return(
+                                        <div key={index} className={styles.image_container}>
+                                            {
+                                                url.type === 'image' ? 
+                                                    <img alt='' src={url.url} loading='lazy' width='100%' height='100%'/>
+                                                :
+
+                                                    <video controls={true} autoPlay="" name="media" width={'100%'} height= '100%'>
+                                                        <source src={url.url} type="video/mp4"/>
+
+                                                    </video>
+                                            }
+                                        </div>
+                                    )
+                                })
+                            }
+                            
+                        </div>
+                    )
+                })
+            }
+            
 
 
             
@@ -145,3 +240,6 @@ const CaseStudy = ({caseStudy}) =>{
 }
 
 export default CaseStudy;
+
+//  <img alt='' src={url} loading='lazy' width='100%' height='100%'/>
+

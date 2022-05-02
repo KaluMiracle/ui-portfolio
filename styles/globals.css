@@ -49,3 +49,9 @@ a {
     src: local('Arsenal'),
       url('../assets/fonts/Arsenal/Arsenal-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+      url('../assets/fonts/OpenSans-Light.ttf') format('truetype');
+}

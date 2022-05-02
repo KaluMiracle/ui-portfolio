@@ -41,6 +41,8 @@
             font-weight: bolder;
             font-size: 15px;
             text-transform: uppercase;
+            cursor: pointer;
+
         }
         p:hover{
             color: #056a4c;
@@ -73,6 +75,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 250px;
+        cursor: pointer;
         img{
             width: 100px;
         }
@@ -84,6 +87,7 @@
             text-transform: uppercase;
             color: #056a4c;
             font-family: 'Libre Light';
+            
         }
     }
 
@@ -134,7 +138,7 @@
             }
         }
         .case_studies{
-            margin-top: 10%;
+            margin-top: 15%;
         }
         
     }
@@ -174,9 +178,10 @@
 
     }
     .image{
-        width: 500px;
-        height: 200px;
+        width: 600px;
+        height: 100%;
         background-color: #ff6a3d;
+        position: relative;
     }
 
     @media screen and (min-width: 1024px) {

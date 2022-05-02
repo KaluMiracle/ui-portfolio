@@ -18,11 +18,13 @@
         width: 230px;
         align-items: flex-start;
         margin-bottom: 20px;
+        cursor: pointer;
         h2{
             font-weight: normal;
             font-size: 20px;
             font-family: 'Libre Light';
             margin: 0;
+            
         }
         img{
             width: 80px;
@@ -44,6 +46,7 @@
             color: #008037;
             margin-right: 2px;
             font-weight: normal;
+            cursor: pointer;
         }
     }
 

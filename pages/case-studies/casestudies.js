@@ -14,7 +14,7 @@ export const caseStudies = [
         brainstorming: [
             {
                 title: 'Understanding the problem and creating solutions',
-                description: 'there are a million reasons why people hesitate to use online shopping platforms; i would be concentrating on just a few of them',
+                description: 'There are a million reasons why people hesitate to use online shopping platforms; i would be concentrating on just a few of them',
                 content: [
                     {
                         challenge: 'outdated and unprofessional interfaces',
@@ -40,7 +40,7 @@ export const caseStudies = [
             },
             {
                 title: 'Project goal and target users',
-                description: 'the primary goal for this project is to create an MVP (Minumum Viable Product). To achieve this goal, i had to get familiar with the end users of this product and focus on their various needs which may vary; their occupations and roles being a main determining factor.',
+                description: 'The primary goal for this project is to create an MVP (Minumum Viable Product). To achieve this goal, i had to get familiar with the end users of this product and focus on their various needs which may vary; their occupations and roles being a main determining factor.',
                 
             }
         ],
@@ -48,38 +48,42 @@ export const caseStudies = [
         others: [
             {
                 title: 'Site maps',
-                description: 'at this stage of my design, i created a journey while noting the key details need to get to the end of the user journey seamlessly',
-                urls:[{type: 'image', url: ''}]
+                description: 'At this stage of my design, i created a journey while noting the key details need to get to the end of the user journey seamlessly',
+                urls: [{type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/c1cc674b5ca96cc3687ff466f61a1906.png'}]
             },
             {
                 title: 'User flows',
                 description: 'I created the major flows through the whole user journey',
-                urls: [{type: 'image', url: ''}]
+                urls: [{type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/2be2f8f7d882362a000564fab0cb73d8.png'}]
             },
             {
                 title: 'Wire framing',
                 description: 'Next. I created more structured and defined user flows in form of wireframes',
-                urls: [{type: 'image', url: ''}]
+                urls: [{type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/c88ae700b4894b6057e75f85a904c555.png'}]
             },
             {
                 title: 'Style guide',
-                description: 'for a faster and fluid workflow. i created a style guide',
-                urls: [{type: 'image', url: ''},{type: 'image', url: ''}]
+                description: 'For a faster and fluid workflow. i created a style guide',
+                urls: [
+                    {type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/39b1b2ff3d03db113a9c00b4bf073c82.jpg'},
+                    {type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/21fde6079a513bc357030b0399808820.jpg'},
+                    {type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/a1773d6e19877f445e44a48e82e55dca.jpg'}
+                ]
             },
             {
                 title: 'High fidelity',
                 description: '',
-                url: [{type: 'image', url: ''}]
+                urls: [{type: 'image', url: 'https://fritani.my.canva.site/uiui-portfolio-website/images/493d4b3193faf69420893b1129513d67.png'}]
             },
             {
                 title: 'FeedBack',
                 description: 'Checkout proces before feedback',
-                url: [{type: 'image', url: ''}]
+                urls: [{type: 'image', url: ''}]
             },
             {
                 title: 'Final Prototype',
                 description: '',
-                url: [{type: 'video', url: ''}]
+                urls: [{type: 'video', url: 'https://fritani.my.canva.site/uiui-portfolio-website/videos/2609a069450e323eed644217f79e2068.mp4#t=0.01'}]
             }
         ],
         
