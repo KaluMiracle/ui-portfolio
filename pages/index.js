@@ -34,7 +34,7 @@ export default function Home() {
         <h2>and I'm a UI/UX Designer.</h2>
         <div className={styles.case_studies}>
           <img src='https://fritani.my.canva.site/uiux-portfolio/videos/435164c1555a336ba7a82f786005d2d6.gif' alt='hd'/>
-          <Link href={''}>
+          <Link href={'/case-studies'}>
             <p>View CASESTUDIES</p>
           </Link>
         </div>

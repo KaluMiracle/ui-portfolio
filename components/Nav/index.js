@@ -23,7 +23,7 @@ const Nav = ({
                     }}>MINI WORKS</p>
                 </Link>
                 
-                <Link href=''>
+                <Link href='/case-studies'>
                     <p style={{
                         color: `${active === 2 ? '#008037' : '#000000' }`
                     }}>CASESTUDIES</p>

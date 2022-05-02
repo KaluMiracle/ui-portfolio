@@ -43,3 +43,9 @@ a {
     src: local('Lato'),
       url('../assets/fonts/Gatwick-Bold.otf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Arsenal';
+    src: local('Arsenal'),
+      url('../assets/fonts/Arsenal/Arsenal-Regular.ttf') format('truetype');
+}
