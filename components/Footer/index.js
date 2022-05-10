@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './footer.module.scss'
 import Image from 'next/image'
+import { useState } from 'react'
 const Footer = ()=> {
+    const [className, setClassname] = useState()
     return(
-        <div className={styles.footer}>
+        <div className={styles.footer } data-aos="fade-up">
             <h1>Work with Me</h1>
             <p>send an email</p>
             <a>egwimheritage@gmail.com</a>

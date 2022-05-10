@@ -1,20 +1,91 @@
 .index{
     margin: 0;
     padding: 0;
+     scroll-behavior: smooth;
 }
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.type{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 290px;
+    margin: 0;
+    animation: type 2s steps(50,end) forwards;
+
+    @media screen and (min-width: 740px) {
+        width: 575px;
+        
+    }
+    @media screen and (min-width: 1024px) {
+        width: 865px;
+    }
+    
+}
+
+@keyframes type {
+  0% {
+      
+    width: 0;
+  }
+  1%, 99%{
+      opacity: 1;
+      border-right: 1px solid #ff6a3d;
+  }
+  100%{
+      opacity: 1;
+    border-right: none;
+  }
+}
+
+.type2{
+    opacity: 0;
+    white-space: nowrap;
+    width: 200px;
+    
+    overflow: hidden;
+    animation: type 2.2s steps(50,end) 2s forwards, blink .5s step-end  infinite alternate;
+   
+    @media screen and (min-width: 740px) {
+        width: 270px;
+        
+    }
+    @media screen and (min-width: 1024px) {
+        
+        width: 400px;
+    }
+
+    @keyframes blink {
+        50% {
+            border-right: 1px solid black;
+        }
+    }
+}
+
 .container_1{
     width: 100%;
     min-height: 80vh;
     padding: 50px 5%;
     background-color: white;
     box-sizing: border-box;
+    
     .head{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         h2{
-            font-size: 13px;
+            font-size: 17px;
             color: #1a2238;
             margin: 0;
             margin-right: 40px;
@@ -22,7 +93,7 @@
             font-family: 'Libre Light';
         }
         div{
-            width:60%;
+            width: 50%;
             height: 1px;
             background: black;
             flex-grow: 2;
@@ -119,8 +190,9 @@
         
     }
     @media screen and (min-width: 1024px) {
-        height: 110vh;
+        height: 90vh;
         padding: 50px 10%;
+        margin: 0 ;
         h1{
             font-size: 75px;
             margin-top: 15%;
@@ -147,8 +219,8 @@
 
 .container_2{
     width: 100%;
-    height: 100vh;
     min-height: 700px;
+    height: fit-content;
     padding: 0 10%;
     padding-top: 100px;
     background: #1a2238;
@@ -157,11 +229,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    overflow: visible;
+    
+    
     
     .about{
         width: 100%;
         h2{
-            font-size: 20px;
+            font-size: 30px;
             margin: 0;
             margin-bottom: 30px;
             color: white;
@@ -179,13 +254,16 @@
     }
     .image{
         width: 600px;
-        height: 100%;
-        background-color: #ff6a3d;
-        position: relative;
+        height: 500px;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
     }
 
     @media screen and (min-width: 1024px) {
-        height: 100vh;
+        height: 90vh;
         align-items: flex-start;
         .about{
             width: 50%;

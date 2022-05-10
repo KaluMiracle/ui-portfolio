@@ -5,6 +5,11 @@ import styles from './case-studies.module.scss'
 import Head from 'next/head'
 import WorksLayout from '../../layouts/worksLayout'
 import { caseStudies } from './casestudies'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
+
+
 const CaseStudy = ({
     title= '',
     description='',
@@ -12,7 +17,7 @@ const CaseStudy = ({
     imageUrl
 })=>{
     return (
-        <div className={styles.case_study_container}>
+        <div className={styles.case_study_container} data-aos="fade-up">
             <div className={styles.container_1}>
                 <h3>{title} -</h3>
                 <h3>{description}</h3>
@@ -47,7 +52,9 @@ const CaseStudy = ({
 }
 
 const CaseStudies = () => {
-
+    useEffect(()=>{
+        AOS.init();
+    })
     
     return (
 

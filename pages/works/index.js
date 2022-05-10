@@ -3,6 +3,10 @@ import Image from 'next/image'
 import styles from './works.module.scss'
 import Head from 'next/head'
 import WorksLayout from '../../layouts/worksLayout'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
+
 
 const Work = ({
     title= '',
@@ -10,7 +14,7 @@ const Work = ({
 })=>{
     const titles = title.split('of')
     return (
-        <div className={styles.work_container}>
+        <div className={styles.work_container} data-aos="fade-up">
             <h3>{titles[0]}</h3>
 
             {titles[1] ? <h3>{`of ${titles[1]}`}</h3> : <></>}
@@ -24,7 +28,9 @@ const Work = ({
 }
 
 const Works = () => {
-
+    useEffect(()=>{
+        AOS.init();
+    })
     
     return (
 
@@ -53,21 +59,21 @@ const Works = () => {
                     <div className={styles.line}></div>
                 </div>
 
-                <div className={styles.video_container}>
+                <div className={styles.video_container} data-aos="fade-up">
                     <video controls="true" autoPlay="" name="media" width={'100%'} height= '100%'>
                         <source src="https://fritani.my.canva.site/uiux-portfolio-website-works/videos/611b08a951cab020e72ecc8ae86f89c2.mp4#t=0.01" type="video/mp4"/>
 
                     </video>
                 </div>
 
-                <div className={`${styles.video_container} ${styles.large}` } >
+                <div className={`${styles.video_container} ${styles.large}` } data-aos="fade-up">
                     <video controls="true" autoPlay="" name="media" width={'100%'} height= '100%'>
                         <source src="https://fritani.my.canva.site/uiux-portfolio-website-works/videos/4b0011f8f23ce03562d3a2c1909183a7.mp4#t=0.01" type="video/mp4"/>
 
                     </video>
                 </div>
 
-                <div className={styles.video_container}>
+                <div className={styles.video_container} data-aos="fade-up">
                     <video controls="true" autoPlay="" name="media" width={'100%'} height= '100%' >
                         <source src="https://fritani.my.canva.site/uiux-portfolio-website-works/videos/1d6c651ad37a44c4a6e1ae4f23dc0bc7.mp4#t=0.01" type="video/mp4"/>
 
