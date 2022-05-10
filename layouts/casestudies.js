@@ -1,4 +1,4 @@
-export const caseStudies = [
+export  const caseStudies = [
     {
         index: 0,
         title: 'shoppie',

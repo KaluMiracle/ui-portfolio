@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './case-studies.module.scss'
 import Head from 'next/head'
 import WorksLayout from '../../layouts/worksLayout'
-import { caseStudies } from './casestudies'
+import { caseStudies } from '../../layouts/casestudies'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';

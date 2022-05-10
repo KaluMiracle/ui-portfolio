@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import { caseStudies } from "./casestudies"
+import { caseStudies } from "../../layouts/casestudies"
 import styles from './slug.module.scss'
 import Link from 'next/link'
 import reactDom from "react-dom"
