@@ -31,15 +31,22 @@
     h3{
         font-size: 40px;
         font-weight: normal;
-        text-transform: capitalize;
+        text-transform: lowercase;
         margin: 0;
         font-family: 'Arsenal';
+    }
+    h3::first-letter{
+        text-transform: uppercase;
     }
 
     p{
         font-size: 18px;
-        text-transform: capitalize;
+        text-transform: lowercase;
         font-family: 'Arsenal';
+    }
+
+    p::first-letter{
+        text-transform: uppercase;
     }
 
     .button{

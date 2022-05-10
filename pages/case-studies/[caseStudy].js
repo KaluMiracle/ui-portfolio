@@ -3,16 +3,16 @@ import React from 'react'
 import { caseStudies } from "../../layouts/casestudies"
 import styles from './slug.module.scss'
 import Link from 'next/link'
-import reactDom from "react-dom"
-import { withRouter } from "next/router"
+
 export const getStaticPaths = ()=> {
-    const paths = caseStudies.map((caseStudy, index) => {
-        return {
+    // const paths = caseStudies.map((item) => {
+    //     return {
 
-            params: {caseStudy: caseStudy.title, locale: index.toString()}
-        }
-    })
+    //         params: {caseStudy: 'item.title'}
+    //     }
+    // })
 
+    const paths = [{params: {caseStudy: caseStudies[0].title}}]
     return {
         paths,
         fallback: true
@@ -20,9 +20,7 @@ export const getStaticPaths = ()=> {
 }
 
 export const getStaticProps = (context)=>{
-    const index = context.params.index
-    // console.log('ddd')
-    console.log(context)
+   
     return {
         props: { caseStudy: caseStudies[0]  }
     }
@@ -94,7 +92,29 @@ const colors = [
     },
     
 ]
-const CaseStudy = ({caseStudy}) =>{
+const CaseStudy = ({caseStudy={
+   index: 0,
+    title: 'shoppie',
+    description: 'ecommerce App',
+    content: 'Shoppie is an ecommerce app that provides a personalised shopping experience to diversified shoppers',
+    imageUrl: 'https://fritani.my.canva.site/uiux-design-portfolio-website-castudies/images/c62e4107025c473d78d432447db4a287.png',
+
+    roles: ['design thinking', 'wireframing', 'designing', 'prototyping'],
+    results: ['Creating the ideal product that is both desirable and viable when tested by users',
+                'Giving users a more seamless and personalised shopping experience'
+            ],
+
+    brainstorming: [
+        
+    ],
+
+    others: [
+            
+    ],
+        
+
+        
+}}) =>{
     return (
         <div className={styles.index}>
             <Link href={'/case-studies'}>
