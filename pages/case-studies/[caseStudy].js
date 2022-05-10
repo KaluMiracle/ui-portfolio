@@ -171,7 +171,7 @@ const CaseStudy = ({caseStudy}) =>{
                                                             {content.challenge}
                                                         </div>
                                                     </article>
-                                                    ->
+                                                    
                                                     <article>
                                                         <h5>The solution</h5>
                                                         <div className={styles.box} style={{

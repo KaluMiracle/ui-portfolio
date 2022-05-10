@@ -40,8 +40,8 @@ export default function Home() {
           </Link>
         </div>
         
-        <h1 className={styles.type }>Hi, I'm <span>Heritage Egwim</span>,</h1>
-        <h2 className={styles.type2 }>and I'm a UI/UX Designer.</h2>
+        <h1 className={styles.type }>{"Hi, I'm "}<span>Heritage Egwim</span>,</h1>
+        <h2 className={styles.type2 }>{"and I'm a UI/UX Designer."}</h2>
         <div className={styles.case_studies}>
           <img src='https://fritani.my.canva.site/uiux-portfolio/videos/435164c1555a336ba7a82f786005d2d6.gif' alt=''/>
           <Link href={'/case-studies'}>
@@ -53,7 +53,7 @@ export default function Home() {
       <div id='about' data-aos="fade-up" className={styles.container_2 }>
         <div className={styles.about}>
           <h2>About Me</h2>
-          <p>Hi! I'm Heritage.</p>
+          <p>{"Hi! I'm Heritage."}</p>
           <p>I am passionate about anything design. I make user-friendly designs that can be implemented and are sustainable.</p>
           <p>Over the period of my learning and constant work practice, 
             I developed an interest in how people respond positively to interactive interfaces that give digital solutions to their challenges. Having this knowledge, 
